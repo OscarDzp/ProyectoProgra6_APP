@@ -1,4 +1,6 @@
-﻿namespace ProyectoProgra6_APP
+﻿using ProyectoProgra6_APP.Views;
+
+namespace ProyectoProgra6_APP
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new LoginPage());
         }
     }
 }
