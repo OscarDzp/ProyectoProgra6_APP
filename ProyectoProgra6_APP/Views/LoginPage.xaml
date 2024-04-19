@@ -17,7 +17,7 @@
 
         <Switch x:Name="SwVerPassword"  IsToggled="false" Toggled="SwVerPassword_Toggled" />
 
-        <Button x:Name="BtnIngresar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60" />
+        <Button x:Name="BtnIngresar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60" Clicked="BtnLogin_Clicked" />
 
         <Button x:Name="BtnSingUp" Text="Sing Up" BackgroundColor="blue" TextColor="White" Clicked="BtnSingUp_Clicked" Margin="0,5,0,0" WidthRequest="200" HeightRequest="60" />
 

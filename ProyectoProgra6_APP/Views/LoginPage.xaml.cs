@@ -26,13 +26,15 @@ public partial class LoginPage : ContentPage
         await Navigation.PushAsync(new UserSignUpPage());
     }
 
-    private void BtnIngresar_Clicked(object sender, EventArgs e)
-    {
-
-    }
+  
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
 
+    }
+
+    private async void BtnLogin_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new CategoriesPage());
     }
 }
