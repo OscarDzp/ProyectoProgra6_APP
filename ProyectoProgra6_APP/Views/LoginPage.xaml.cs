@@ -37,4 +37,9 @@ public partial class LoginPage : ContentPage
     {
         await Navigation.PushAsync(new CategoriesPage());
     }
+
+    private async void BtnAdmin_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new BrandPage());
+    }
 }

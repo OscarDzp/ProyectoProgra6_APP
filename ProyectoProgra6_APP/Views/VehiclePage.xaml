@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoProgra6_APP.Views.VehiclePage"
+             Title="Admin Vehiculos">
+    <VerticalStackLayout>
+
+        <Label  Text="Ingrese datos del modelo" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+
+        <Entry x:Name="TxtColor" Placeholder="Color" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+
+        <Entry x:Name="TxtPrecio" Placeholder="Precio" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+
+        <Picker x:Name="CboxMarca" Title="Elija una marca" TextColor="Black" TitleColor="Black"/>
+        
+        <Picker x:Name="CboxModelo" Title="Elija un modelo" TextColor="Black" TitleColor="Black"/>
+        
+        <Picker x:Name="CboxCategoria" Title="Elija una Categoria" TextColor="Black" TitleColor="Black"/>       
+
+        <Button x:Name="BtnAgregar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60"  />
+
+
+    </VerticalStackLayout>
+</ContentPage>

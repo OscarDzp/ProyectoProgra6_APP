@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoProgra6_APP.Views.StorePage"
+             Title="Admin Tienda">
+    <VerticalStackLayout>
+        
+        <Label  Text="Ingrese datos de la tienda" TextColor="White" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+
+        <Entry x:Name="TxtNombre" Placeholder="Nombre" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+
+        <Entry x:Name="TxtNumeroTienda" Placeholder="NumeroTienda" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+
+        <Entry x:Name="TxtTelefono" Placeholder="Telefono" Keyboard="Telephone" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+
+        <Entry x:Name="TxtDireccion" Placeholder="Direccion" FontSize="20" Margin="0,20,0,0"  TextColor="Black" HeightRequest="100"/>
+
+        <Button x:Name="BtnAgregar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60"  />
+
+    </VerticalStackLayout>
+</ContentPage>
