@@ -35,7 +35,7 @@ public partial class LoginPage : ContentPage
 
     private async void BtnLogin_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new CategoriesPage());
+        await Navigation.PushAsync(new OptionsPage());
     }
 
     private async void BtnAdmin_Clicked(object sender, EventArgs e)

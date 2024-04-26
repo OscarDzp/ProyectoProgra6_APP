@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoProgra6_APP.Views.OptionsPage"
              Title="Options Page">
+    <ScrollView>
     <VerticalStackLayout>
         <Label 
             Text="Select an Action"
@@ -22,15 +23,19 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="0" Grid.Column="0" Text="Assets Managment" BackgroundColor="#FF5733" Margin="5" HeightRequest="200"/>
-            <Button Grid.Row="0" Grid.Column="1" Text="My Account" BackgroundColor="Gold" Margin="5" HeightRequest="200"/>
-            <Button Grid.Row="1" Grid.Column="0" Text="Departments" BackgroundColor="#5733FF" Margin="5" HeightRequest="200" />
-            <Button Grid.Row="1" Grid.Column="1" Text="Categories" BackgroundColor="DarkCyan" Margin="5" HeightRequest="200"/>
-            <Button Grid.Row="2" Grid.Column="0" Text="Depreciation Managment" BackgroundColor="Brown" Margin="5" HeightRequest="200" />
-            <Button Grid.Row="2" Grid.Column="1" Text="Exit" BackgroundColor="#3366FF" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="0" Grid.Column="0" Text="Roles Managment" Clicked="Btn_RolesManngment_clicked" BackgroundColor="#FF5733" Margin="5" HeightRequest="200"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Users" Clicked="Btn_Users_clicked"  BackgroundColor="Gold" Margin="5" HeightRequest="200"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="Car brands"  Clicked="Btn_Carbrands_clicked" BackgroundColor="#5733FF" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="1" Grid.Column="1" Text="Categories" Clicked="Btn_Categories_clicked" BackgroundColor="DarkCyan" Margin="5" HeightRequest="200"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="Car models" Clicked="Btn_Carmodels_clicked" BackgroundColor="DarkMagenta" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="2" Grid.Column="1" Text="Store branches" Clicked="Btn_Storebranches_clicked"  BackgroundColor="Indigo" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="3" Grid.Column="0" Text="Store vehicles" Clicked="Btn_Storevehicles_clicked" BackgroundColor="Chocolate" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="3" Grid.Column="1" Text="Exit" Clicked="Btn_Exit_clicked" BackgroundColor="#3366FF" Margin="5" HeightRequest="200" />
         </Grid>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

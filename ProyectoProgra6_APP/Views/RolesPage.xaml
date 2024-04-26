@@ -8,16 +8,28 @@
           
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label Text= "Add your new user roles" TextColor="WhiteSmoke" />
+        <Label Text= "Roles Page." TextColor="WhiteSmoke" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+        <Label Text= "Tables for roles" TextColor="WhiteSmoke" />
+        <TableView >
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="ID: 1" Detail="Rol: Admin" TextColor="WhiteSmoke" DetailColor="WhiteSmoke"/>
+                    <TextCell Text="ID: 2" Detail="Rol: Usuario" TextColor="WhiteSmoke" DetailColor="WhiteSmoke"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Label Text= "Add your new user roles" TextColor="WhiteSmoke" Margin="0,20,0,0" />
         
-        <Entry x:Name="TxtRolUsuario" Placeholder="Roles" TextColor="WhiteSmoke" />
+        <Entry x:Name="TxtRolUsuario" Placeholder="Roles" TextColor="WhiteSmoke" PlaceholderColor="WhiteSmoke" />
 
 
         <StackLayout Orientation="Horizontal" >
 
             <Button x:Name="BtnAdd" Text="ADD" Margin="0,20,0,5" Clicked="BtnAdd_Clicked" BackgroundColor="Green"/>
-            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" Clicked="BtnCancel_Clicked" BackgroundColor="Firebrick"/>
-
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5"  BackgroundColor="Firebrick"/>
+            <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
+            <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
