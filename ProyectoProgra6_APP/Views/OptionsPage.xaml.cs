@@ -46,4 +46,9 @@ public partial class OptionsPage : ContentPage
     {
         await Navigation.PopAsync();
     }
+
+    private async void Btn_Orders_clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new BillsPage());
+    }
 }
