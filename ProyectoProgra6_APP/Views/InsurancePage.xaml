@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoProgra6_APP.Views.InsurancePage"
+             Title="Solicitud de Seguro"
+             BackgroundImageSource="cielo">
+    
+    <VerticalStackLayout Padding="20">
+
+        <Entry x:Name="TxtSeguroId" PlaceholderColor="AntiqueWhite" Placeholder="Id Seguro" Margin="0,5 , 0,5" >
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="LightSlateGray" />
+                    <Setter Property="TextColor" Value="Black" />
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Entry x:Name="TxtCompaniaSeguros" PlaceholderColor="AntiqueWhite" Placeholder="Tipo de Seguro" Margin="0,5 , 0,5" >
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="LightSlateGray" />
+                    <Setter Property="TextColor" Value="Black" />
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Entry x:Name="TxtTipoCobertura" PlaceholderColor="AntiqueWhite" Placeholder="Tipo Cobertura" Margin="0,5 , 0,5" >
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="LightSlateGray" />
+                    <Setter Property="TextColor" Value="Black" />
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Label>Fecha de Inicio</Label>
+        <DatePicker x:Name="TxtFechaInicio" Format="d" Margin="0,5 , 0,5" TextColor="LightSlateGray">
+            <DatePicker.Triggers>
+                <Trigger TargetType="DatePicker" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="LightSlateGray" />
+                    <Setter Property="TextColor" Value="Black" />
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Trigger>
+            </DatePicker.Triggers>
+        </DatePicker>
+
+        <Label>Fecha de Vencimiento</Label>
+        <DatePicker x:Name="TxtFechaVencimiento" Format="d" Margin="0,5 , 0,5" TextColor="LightSlateGray">
+            <DatePicker.Triggers>
+                <Trigger TargetType="DatePicker" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="LightSlateGray" />
+                    <Setter Property="TextColor" Value="Black" />
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Trigger>
+            </DatePicker.Triggers>
+        </DatePicker>
+
+        <StackLayout Orientation="Horizontal" >
+            <Button x:Name="BtnSolicitar" Text="Solicitar" Margin="0,20,5,5" Clicked="BtnSolicitar_Clicked" BackgroundColor="LightYellow" TextColor="Black"/>
+            <Button x:Name="BtnCancel" Text="Cancel" Margin="0,20,0,5" Clicked="BtnCancel_Clicked" BackgroundColor="Maroon"/>
+        </StackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>
