@@ -34,8 +34,8 @@
             <Button Grid.Row="2" Grid.Column="0" Text="Car models" Clicked="Btn_Carmodels_clicked" BackgroundColor="DarkMagenta" Margin="5" HeightRequest="200" />
             <Button Grid.Row="2" Grid.Column="1" Text="Store branches" Clicked="Btn_Storebranches_clicked"  BackgroundColor="Indigo" Margin="5" HeightRequest="200" />
             <Button Grid.Row="3" Grid.Column="0" Text="Store vehicles" Clicked="Btn_Storevehicles_clicked" BackgroundColor="Chocolate" Margin="5" HeightRequest="200" />
-            <Button Grid.Row="3" Grid.Column="1" Text="Make an Order" Clicked="Btn_Orders_clicked" BackgroundColor="Chocolate" Margin="5" HeightRequest="200" />
-            <Button Grid.Row="4" Grid.Column="0" Text="Exit" Clicked="Btn_Exit_clicked" BackgroundColor="#3366FF" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="3" Grid.Column="0" Text="Make an Order" Clicked="Btn_Orders_clicked" BackgroundColor="Chocolate" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="3" Grid.Column="1" Text="Exit" Clicked="Btn_Exit_clicked" BackgroundColor="#3366FF" Margin="5" HeightRequest="200" />
         </Grid>
 
     </VerticalStackLayout>
