@@ -2,22 +2,48 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoProgra6_APP.Views.VehiclePage"
-             Title="Admin Vehiculos">
+             Title="Admin Vehiculos"
+             BackgroundImageSource="vehiclepage"
+             >
     <VerticalStackLayout>
 
-        <Label  Text="Ingrese datos del modelo" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+        <Label  Text="Enter model data" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
 
-        <Entry x:Name="TxtColor" Placeholder="Color" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Entry x:Name="TxtColor" Placeholder="Color" FontSize="20" Margin="0,20,0,0"  TextColor="Black" PlaceholderColor="Black">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-        <Entry x:Name="TxtPrecio" Placeholder="Precio" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Entry x:Name="TxtPrecio" Placeholder="Price" FontSize="20" Margin="0,20,0,0"  TextColor="Black" PlaceholderColor="Black">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-        <Picker x:Name="CboxMarca" Title="Elija una marca" TextColor="Black" TitleColor="Black"/>
-        
-        <Picker x:Name="CboxModelo" Title="Elija un modelo" TextColor="Black" TitleColor="Black"/>
-        
-        <Picker x:Name="CboxCategoria" Title="Elija una Categoria" TextColor="Black" TitleColor="Black"/>       
+        <Picker x:Name="CboxMarca" Title="Choose a brand" TextColor="Black" TitleColor="Black"/>
 
-        <Button x:Name="BtnAgregar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60"  />
+        <Picker x:Name="CboxModelo" Title="Choose a model" TextColor="Black" TitleColor="Black"/>
+
+        <Picker x:Name="CboxCategoria" Title="Choose a Category" TextColor="Black" TitleColor="Black"/>
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="BtnAdd" Text="ADD" Margin="10,20,0,5" BackgroundColor="Green"/>
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" BackgroundColor="Firebrick"/>
+            <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
+            <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
+        </StackLayout>
 
 
     </VerticalStackLayout>

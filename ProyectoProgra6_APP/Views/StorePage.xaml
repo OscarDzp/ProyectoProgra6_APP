@@ -2,20 +2,65 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoProgra6_APP.Views.StorePage"
-             Title="Admin Tienda">
+             Title="Admin Tienda"
+             BackgroundImageSource="sotrepage"
+             >
     <VerticalStackLayout>
-        
-        <Label  Text="Ingrese datos de la tienda" TextColor="White" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
 
-        <Entry x:Name="TxtNombre" Placeholder="Nombre" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Label  Text="Enter store details" TextColor="White" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
 
-        <Entry x:Name="TxtNumeroTienda" Placeholder="NumeroTienda" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Entry x:Name="TxtNombre" Placeholder="Name" FontSize="20" Margin="0,20,0,0"  TextColor="Black">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-        <Entry x:Name="TxtTelefono" Placeholder="Telefono" Keyboard="Telephone" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Entry x:Name="TxtNumeroTienda" Placeholder="Store Number" FontSize="20" Margin="0,20,0,0"  TextColor="Black">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-        <Entry x:Name="TxtDireccion" Placeholder="Direccion" FontSize="20" Margin="0,20,0,0"  TextColor="Black" HeightRequest="100"/>
+        <Entry x:Name="TxtTelefono" Placeholder="Phone" Keyboard="Telephone" FontSize="20" Margin="0,20,0,0"  TextColor="Black">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-        <Button x:Name="BtnAgregar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60"  />
+        <Entry x:Name="TxtDireccion" Placeholder="Address" FontSize="20" Margin="0,20,0,0"  TextColor="Black" HeightRequest="100">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="BtnAdd" Text="ADD" Margin="10,20,0,5" BackgroundColor="Green"/>
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" BackgroundColor="Firebrick"/>
+            <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
+            <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
+        </StackLayout>
+
 
     </VerticalStackLayout>
 </ContentPage>

@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoProgra6_APP.Views.UserPage"
-             Title="UserPage">
-    <VerticalStackLayout BackgroundColor="Violet">
+             Title="UserPage"
+             BackgroundImageSource="userpage"
+             >
+    <VerticalStackLayout >
         <Label Text= "User Page." TextColor="WhiteSmoke" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
 
 
@@ -29,13 +31,60 @@
             </Entry.Triggers>
         </Entry>
 
-        <Entry x:Name="TxtLastName" Placeholder="Last Name" Margin="0,5,0,5" TextColor="WhiteSmoke" ClearButtonVisibility="WhileEditing"/>
-        <Entry x:Name="TxtCardId" Placeholder="Card ID" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Numeric"/>
-        <Entry x:Name="TxtPhoneNumber" Placeholder="Phone Number" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Telephone" />
+        <Entry x:Name="TxtLastName" Placeholder="Last Name" Margin="0,5,0,5" TextColor="WhiteSmoke" ClearButtonVisibility="WhileEditing">
+        <Entry.Triggers>
+            <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Trigger>
+        </Entry.Triggers>
+        </Entry>
 
-        <Entry x:Name="TxtEmail" Placeholder="Email" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Email"  ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="TxtCardId" Placeholder="Card ID" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Numeric">
+        <Entry.Triggers>
+            <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Trigger>
+        </Entry.Triggers>
+        </Entry>
 
-        <Entry x:Name="TxtPassword" Placeholder="Password" Margin="0,5,0,5" TextColor="WhiteSmoke" />
+        <Entry x:Name="TxtPhoneNumber" Placeholder="Phone Number" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Telephone">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Entry x:Name="TxtEmail" Placeholder="Email" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Email"  ClearButtonVisibility="WhileEditing">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Entry x:Name="TxtPassword" Placeholder="Password" Margin="0,5,0,5" TextColor="WhiteSmoke">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
         <Picker x:Name="CboxUserRole" Title="Select USer Role" TextColor="WhiteSmoke" TitleColor="Red" ItemDisplayBinding="{Binding RolUsuario1}"/>
 

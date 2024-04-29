@@ -59,7 +59,14 @@
 	<ItemGroup>
 	  <None Remove="Platforms\Android\Resources\xml\network_security_config.xml" />
 	  <None Remove="Resources\Images\automagnate.png" />
+	  <None Remove="Resources\Images\brandpage.jpg" />
+	  <None Remove="Resources\Images\categoriespage.jpg" />
 	  <None Remove="Resources\Images\loginbackground.jpg" />
+	  <None Remove="Resources\Images\modelpage.jpg" />
+	  <None Remove="Resources\Images\rolespage.jpg" />
+	  <None Remove="Resources\Images\sotrepage.jpeg" />
+	  <None Remove="Resources\Images\userpage.jpg" />
+	  <None Remove="Resources\Images\vehiclepage.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

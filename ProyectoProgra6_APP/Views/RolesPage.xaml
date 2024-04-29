@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoProgra6_APP.Views.RolesPage"
-             Title="Roles Page">
-    <VerticalStackLayout Padding="20" BackgroundColor="BlueViolet" >
+             Title="Roles Page"
+             BackgroundImageSource="rolespage"
+             >
+    <VerticalStackLayout Padding="20" >
         <Label 
           
             VerticalOptions="Center" 
@@ -21,7 +23,16 @@
 
         <Label Text= "Add your new user roles" TextColor="WhiteSmoke" Margin="0,20,0,0" />
         
-        <Entry x:Name="TxtRolUsuario" Placeholder="Roles" TextColor="WhiteSmoke" PlaceholderColor="WhiteSmoke" />
+        <Entry x:Name="TxtRolUsuario" Placeholder="Roles" TextColor="WhiteSmoke" PlaceholderColor="WhiteSmoke">
+        <Entry.Triggers>
+            <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Trigger>
+        </Entry.Triggers>
+        </Entry>
 
 
         <StackLayout Orientation="Horizontal" >

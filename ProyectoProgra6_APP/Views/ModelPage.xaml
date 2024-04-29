@@ -2,18 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoProgra6_APP.Views.ModelPage"
-             Title="ModelPage">
+             Title="ModelPage"
+             BackgroundImageSource="modelpage"
+             >
     <VerticalStackLayout>
-        <Label  Text="Ingrese datos del modelo" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+        <Label  Text="Enter model data" TextColor="WhiteSmoke" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
 
-        <Entry x:Name="TxtNombre" Placeholder="Nombre" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Entry x:Name="TxtNombre" Placeholder="Name" FontSize="20" Margin="0,20,0,0"  TextColor="Black">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-        <Entry x:Name="TxtAnnio" Placeholder="Año" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
 
-        <Picker x:Name="CboxMarca" Title="Elija una marca" TextColor="Black" TitleColor="Black"/>
-        
+        <Picker x:Name="CboxMarca" Title="Choose a brand" TextColor="Black" TitleColor="WhiteSmoke" />
 
-        <Button x:Name="BtnAgregar" Text="Login" BackgroundColor="Green" TextColor="White" WidthRequest="200" HeightRequest="60"  />
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="BtnAdd" Text="ADD" Margin="0,20,0,5" BackgroundColor="Green"/>
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" BackgroundColor="Firebrick"/>
+            <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
+            <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
+            
+        </StackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

@@ -29,7 +29,7 @@
             </Label.GestureRecognizers>
         </Label>
 
-        <Label  Text=" © Todos los derechos reservados de Hacking Solutions" TextColor="White" FontSize="10" Margin="0,80,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+        <Label  Text=" © Todos los derechos reservados de Hacking Solutions" TextColor="White" FontSize="13" Margin="0,40,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
         
     </VerticalStackLayout>
 </ContentPage>
