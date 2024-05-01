@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoProgra6_APP.Views.MaintenancePage"
+             Title="MaintenancePage"
+    BackgroundImageSource="maintenancecar">
+
+    <VerticalStackLayout>
+        <Label  Text="Enter Maintenance " TextColor="WhiteSmoke" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+
+        <Entry x:Name="TxtDescripcionMantenimiento" Placeholder="Description Maintenance" FontSize="20" Margin="0,20,0,0"  TextColor="Black"/>
+        <Entry x:Name="TxtFechaInicio" Placeholder="Start Date" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Numeric"/>
+        <Entry x:Name="TxtFechaFinalizacion" Placeholder="End Date" Margin="0,5,0,5" TextColor="WhiteSmoke"  Keyboard="Numeric"/>
+        <Entry x:Name="TxtCosto" Placeholder="Cost" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Numeric" />
+
+            <Picker x:Name="CboxMauintenance" Title="Select Maintenance" TextColor="WhiteSmoke" TitleColor="Red" ItemDisplayBinding="{Binding Maintenance}"/>
+
+            <StackLayout Orientation="Horizontal" >
+
+                <Button x:Name="BtnAdd" Text="ADD" Margin="0,20,0,5" BackgroundColor="Green"/>
+                <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" BackgroundColor="Firebrick"/>
+                <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
+                <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
+
+            </StackLayout>
+            
+    </VerticalStackLayout>
+</ContentPage>

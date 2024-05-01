@@ -51,4 +51,19 @@ public partial class OptionsPage : ContentPage
     {
         await Navigation.PushAsync(new BillsPage());
     }
+
+    private async void Btn_Customer_clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new CustomersPage());
+    }
+
+    private async void Btn_Maintenance_clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MaintenancePage());
+    }
+
+    private async void Btn_Ratings_clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RatingsPage());
+    }
 }

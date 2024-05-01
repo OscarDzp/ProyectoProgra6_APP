@@ -61,8 +61,11 @@
 	  <None Remove="Resources\Images\automagnate.png" />
 	  <None Remove="Resources\Images\brandpage.jpg" />
 	  <None Remove="Resources\Images\categoriespage.jpg" />
+	  <None Remove="Resources\Images\customercar.jpg" />
 	  <None Remove="Resources\Images\loginbackground.jpg" />
+	  <None Remove="Resources\Images\maintenancecar.jpg" />
 	  <None Remove="Resources\Images\modelpage.jpg" />
+	  <None Remove="Resources\Images\ratingscar.jpg" />
 	  <None Remove="Resources\Images\rolespage.jpg" />
 	  <None Remove="Resources\Images\sotrepage.jpeg" />
 	  <None Remove="Resources\Images\userpage.jpg" />
@@ -72,8 +75,8 @@
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="8.0.1" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.20" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.20" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.21" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.21" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="RestSharp" Version="110.2.0" />
@@ -92,6 +95,9 @@
 	  <MauiXaml Update="Views\CategoriesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CustomersPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\FinancePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -101,10 +107,16 @@
 	  <MauiXaml Update="Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\MaintenancePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ModelPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\OptionsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RatingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RolesPage.xaml">
