@@ -6,9 +6,9 @@
     BackgroundImageSource="customercar">
 
     <VerticalStackLayout>
-        <Label  Text="Enter Customers Page" TextColor="WhiteSmoke" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+        <Label  Text="Enter Customers Page" TextColor="WhiteSmoke" FontSize="25" FontAttributes="Bold" Margin="0,0,0,0"  HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
 
-        <Entry x:Name="TxtNombre" Placeholder="Name" FontSize="20" Margin="0,20,0,0"  TextColor="Black">
+        <Entry x:Name="TxtNombre" Placeholder="Name" FontSize="20" Margin="0,20,0,0" PlaceholderColor="Aqua" TextColor="Black">
             <Entry.Triggers>
                 <Trigger TargetType="Entry" Property="IsFocused" Value="True">
                     <Setter Property="BackgroundColor" Value="Orange"/>
@@ -18,15 +18,15 @@
                 </Trigger>
             </Entry.Triggers>
         </Entry>
-        <Entry x:Name="TxtApellido" Placeholder="Last Name" Margin="0,5,0,5" TextColor="WhiteSmoke" ClearButtonVisibility="WhileEditing"/>
-        <Entry x:Name="TxtDireccion" Placeholder="Direction" Margin="0,5,0,5" TextColor="WhiteSmoke" ClearButtonVisibility="WhileEditing"/>
-        <Entry x:Name="TxtTelefono" Placeholder="Phone Number" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Numeric" />
-        <Entry x:Name="TxtCorreoElectronico" Placeholder="Email" Margin="0,5,0,5" TextColor="WhiteSmoke" Keyboard="Email"  ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="TxtApellido" Placeholder="Last Name" Margin="0,5,0,5" TextColor="WhiteSmoke" PlaceholderColor="Aqua" ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="TxtDireccion" Placeholder="Direction" Margin="0,5,0,5" TextColor="WhiteSmoke" PlaceholderColor="Aqua" ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="TxtTelefono" Placeholder="Phone Number" Margin="0,5,0,5" TextColor="WhiteSmoke" PlaceholderColor="Aqua" Keyboard="Numeric" />
+        <Entry x:Name="TxtCorreoElectronico" Placeholder="Email" Margin="0,5,0,5" TextColor="WhiteSmoke" PlaceholderColor="Aqua" Keyboard="Email"  ClearButtonVisibility="WhileEditing"/>
 
         <StackLayout Orientation="Horizontal" >
 
             <Button x:Name="BtnAdd" Text="ADD" Margin="0,20,0,5" BackgroundColor="Green"/>
-            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" BackgroundColor="Firebrick"/>
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" Clicked="Btn_cancel" BackgroundColor="Firebrick"/>
             <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
             <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
 

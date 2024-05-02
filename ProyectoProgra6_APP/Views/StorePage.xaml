@@ -56,7 +56,7 @@
         <StackLayout Orientation="Horizontal" >
 
             <Button x:Name="BtnAdd" Text="ADD" Margin="10,20,0,5" BackgroundColor="Green"/>
-            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" BackgroundColor="Firebrick"/>
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" Clicked="Btn_cancel" BackgroundColor="Firebrick"/>
             <Button x:Name="BtnDelete" Text="DELETE" Margin="5,20,0,5"  BackgroundColor="Red"/>
             <Button x:Name="BtnEdit" Text="EDIT" Margin="5,20,0,5"  BackgroundColor="Orange"/>
         </StackLayout>

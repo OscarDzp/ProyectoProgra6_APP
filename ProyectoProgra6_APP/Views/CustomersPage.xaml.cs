@@ -6,4 +6,14 @@ public partial class CustomersPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void BtnCancel_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private async void Btn_cancel(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }

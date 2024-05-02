@@ -6,4 +6,9 @@ public partial class MaintenancePage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Btn_cancel(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }

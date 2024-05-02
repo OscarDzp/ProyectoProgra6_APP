@@ -12,5 +12,8 @@ public partial class RolesPage : ContentPage
 
     }
 
- 
+    private async void Btn_cancel(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }
